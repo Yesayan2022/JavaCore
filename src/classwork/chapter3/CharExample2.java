@@ -1,6 +1,6 @@
 package classwork.chapter3;
 
-public class CharExample {
+public class CharExample2 {
     public static void main(String[] args) {
         char a = 100;
         char b = '#';
