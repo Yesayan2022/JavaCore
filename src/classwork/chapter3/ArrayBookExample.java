@@ -21,11 +21,15 @@ public class ArrayBookExample {
 
         //katarelagorcvac tarberak
         int month_dayss[] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
-        System.out.println("There are " + month_dayss[3] + " days in April.");
+        System.out.println("There are " + month_dayss.length + " days in April.");
+        System.out.println(month_dayss.length);
+        System.out.println(month_dayss.length-1);
+        System.out.println(month_dayss[month_dayss.length-1]);
+        System.out.println();
+        for (int i = 0; i < month_dayss.length; i++) {
+            System.out.print(month_dayss[i] +" ");
 
-
-
-
+        }
 
     }
 }
