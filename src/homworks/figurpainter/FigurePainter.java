@@ -1,4 +1,4 @@
-package homworks;
+package homworks.figurpainter;
 
 public class FigurePainter {
     public static void main(String[] args) {
