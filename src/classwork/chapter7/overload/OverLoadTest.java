@@ -2,7 +2,7 @@ package classwork.chapter7.overload;
 
 public class OverLoadTest {
     public static void main(String[] args) {
-        String fullName = "Poxos Poxosyan";
+        String fullName = "Poxos Boxosyan";
 
         String name = fullName.substring(0, 5);
         String surname = fullName.substring(6);
