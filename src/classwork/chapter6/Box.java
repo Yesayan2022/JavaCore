@@ -1,9 +1,9 @@
 package classwork.chapter6;
 
 public class Box {
-    double width;
-    double height;
-    double depth;
+     double width;
+     double height;
+     double depth;
 
     //BoxDemo3
     // void volume() {
@@ -35,10 +35,11 @@ public class Box {
             return width * height * depth;
         }
     //BoxDemo7 consrtuctor
-    Box (double w,double h, double d){
+     Box (double w,double h, double d){
         width=w;
         height=h;
         depth=d;
     }
+
 
 }
