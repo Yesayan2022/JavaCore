@@ -37,10 +37,12 @@ public class LibraryMain {
                     bookStorage.search(keyword);
                     break;
                 case "3":
+                    System.out.println("......................");
                     bookStorage.print();
+                    System.out.println("......................");
                     break;
                 default:
-                    System.out.println("Involved command. Try again.");
+                    System.out.println("Invaled command. Try again.");
             }
         }
     }

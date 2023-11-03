@@ -1,10 +1,11 @@
 package classwork.chapter2;
+
 /*
-* my first steps
-* in
-* Java
-*
-* */
+ * my first steps
+ * in
+ * Java
+ *
+ * */
 // "Hello Java!"
 public class Example {
     public static void main(String[] args) {

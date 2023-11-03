@@ -9,12 +9,12 @@ public class CharExample {
 
 
         //Switch_case
-        String lang ="ARM";
-        switch (lang){
-            case"HY":
-            case"hy":
-            case"arm":
-            case"ARM":
+        String lang = "ARM";
+        switch (lang) {
+            case "HY":
+            case "hy":
+            case "arm":
+            case "ARM":
                 System.out.println("Barev");
                 break;
             case "RU":
