@@ -8,6 +8,6 @@ public class B extends A {
     }
 
     void sum() {
-        System.out.println("i+ j +k: " + (i + j + k));
+        System.out.println("i + j + k: " + (i + j + k));
     }
 }
