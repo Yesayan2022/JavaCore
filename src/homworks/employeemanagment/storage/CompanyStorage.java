@@ -1,4 +1,6 @@
-package homworks.employeemanagment;
+package homworks.employeemanagment.storage;
+
+import homworks.employeemanagment.model.Company;
 
 public class CompanyStorage {
     private Company[] companies = new Company[10];

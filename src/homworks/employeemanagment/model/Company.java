@@ -1,4 +1,4 @@
-package homworks.employeemanagment;
+package homworks.employeemanagment.model;
 
 import java.util.Objects;
 

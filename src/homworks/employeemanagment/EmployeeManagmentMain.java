@@ -1,5 +1,10 @@
 package homworks.employeemanagment;
 
+import homworks.employeemanagment.model.Company;
+import homworks.employeemanagment.model.Employee;
+import homworks.employeemanagment.storage.CompanyStorage;
+import homworks.employeemanagment.storage.EmployeeStorage;
+
 import java.util.Scanner;
 
 public class EmployeeManagmentMain {
