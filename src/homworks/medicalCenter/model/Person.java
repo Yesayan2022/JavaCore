@@ -1,18 +1,40 @@
 package homworks.medicalCenter.model;
 
+import java.util.Objects;
+
 public abstract class Person {
 
-   protected String id;
-   protected String name;
-   protected String surename;
-   protected String email;
-   protected String phone;
+    protected String id;
+    protected String name;
+    protected String surname;
+    protected String phone;
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Person person = (Person) o;
+
+        if (!Objects.equals(id, person.id)) return false;
+        if (!Objects.equals(name, person.name)) return false;
+        if (!Objects.equals(surname, person.surname)) return false;
+        return Objects.equals(phone, person.phone);
+    }
+
+    @Override
+    public int hashCode() {
+        int result = id != null ? id.hashCode() : 0;
+        result = 31 * result + (name != null ? name.hashCode() : 0);
+        result = 31 * result + (surname != null ? surname.hashCode() : 0);
+        result = 31 * result + (phone != null ? phone.hashCode() : 0);
+        return result;
+    }
 
     public Person(String id, String name, String surename, String email, String phone) {
         this.id = id;
         this.name = name;
-        this.surename = surename;
-        this.email = email;
+        this.surname = surname;
         this.phone = phone;
     }
 
@@ -35,20 +57,12 @@ public abstract class Person {
         this.name = name;
     }
 
-    public String getSurename() {
-        return surename;
+    public String getSurname() {
+        return surname;
     }
 
-    public void setSurename(String surename) {
-        this.surename = surename;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
+    public void setSurname(String surname) {
+        this.surname = surname;
     }
 
     public String getPhone() {
@@ -60,12 +74,11 @@ public abstract class Person {
     }
 
     @Override
-    public String  toString() {
+    public String toString() {
         return "Person{" +
                 "id='" + id + '\'' +
                 ", name='" + name + '\'' +
-                ", surename='" + surename + '\'' +
-                ", email='" + email + '\'' +
+                ", surename='" + surname + '\'' +
                 ", phone='" + phone + '\'' +
                 '}';
     }

@@ -223,7 +223,7 @@ public class EmployeeManagmentMain {
     }
 
 
-    private static void printCommands() {
+    public static void printCommands() {
         System.out.println("Please input 0 for exit");
         System.out.println("Please input 1 for ADD_Company");
         System.out.println("Please input 2 for ADD_Employee");
