@@ -13,5 +13,10 @@ public class Example {
         System.out.print("World");
         System.out.println("!");
 
+        float myFloat = 34e3f;
+        double d= 35e3d;
+        System.out.println(myFloat+" "+ d);
+
+
     }
 }

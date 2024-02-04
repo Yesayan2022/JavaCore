@@ -5,7 +5,6 @@ import homworks.employeemanagment.model.Company;
 public class CompanyStorage {
     private Company[] companies = new Company[10];
     private int size;
-
     public void add(Company company) {
         if (size == companies.length) {
             extend();
@@ -40,7 +39,7 @@ public class CompanyStorage {
             System.out.println("Company does not exist!");
             return;
         }
-        for (int i = 0; i < indexById; i++) {
+        for (int i = indexById+1; i < size; i++) {
             companies[i - 1] = companies[i];
         }
         size--;
